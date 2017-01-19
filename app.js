@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var Phant = require('../index'),
+var Phant = require('./index'),
     dotenv = require('dotenv').load(),
     path = require('path'),
     Keychain = require('phant-keychain-hex'),
@@ -8,8 +8,8 @@ var Phant = require('../index'),
     Storage = require('phant-stream-csv'),
     HttpManager = require('phant-manager-http'),
     app = Phant()
-    http_port = process.env.PHANT_PORT || 8080,
-    telnet_port = process.env.PHANT_TELNET_PORT || 8081;
+    http_port = process.env.PHANT_PORT || 80,
+    telnet_port = process.env.PHANT_TELNET_PORT || 1026;
 
 var keys = Keychain({
   publicSalt: process.env.PHANT_PUBLIC_SALT || 'public salt',

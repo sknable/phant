@@ -25,11 +25,10 @@
     "node": "^0.10.30"
   },
   "bin": {
-    "phant": ".bin/serve"
+    "phant": "app.js"
   },
   "scripts": {
-    "start": ".bin/serve",
-    "test": "grunt"
+    "start": "app.js"
   },
   "dependencies": {
     "JSONStream": "^0.8.0",
