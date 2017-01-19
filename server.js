@@ -8,7 +8,7 @@ var Phant = require('./index'),
     Storage = require('phant-stream-csv'),
     HttpManager = require('phant-manager-http'),
     app = Phant()
-    http_port = process.env.PHANT_PORT || 80,
+    http_port = process.env.PHANT_PORT || 1025,
     telnet_port = process.env.PHANT_TELNET_PORT || 1026;
 
 var keys = Keychain({
